@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/microservices-with-spring-cloud/","tags":["notes","gardenEntry","gardenEntry"]}
+{"dg-publish":true,"permalink":"/microservices-with-spring-cloud/","tags":["notes","gardenEntry","gardenEntry","gardenEntry"],"created":"2024-07-06T00:38:53.960+05:30","updated":"2024-07-06T19:37:00.246+05:30"}
 ---
 
 First of all check [this](https://docs.spring.io/spring-cloud-config/docs/current/reference/html/#_spring_cloud_config_client) official documentation if the below notes don't make sense
