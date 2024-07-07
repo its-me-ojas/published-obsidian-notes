@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/microservices-with-spring-cloud/","tags":["notes","gardenEntry","gardenEntry"],"created":"2024-07-06T00:38:53.960+05:30","updated":"2024-07-07T17:46:58.071+05:30"}
+{"dg-publish":true,"permalink":"/microservices-with-spring-cloud/","tags":["notes","gardenEntry","gardenEntry"],"created":"2024-07-06T00:38:53.960+05:30","updated":"2024-07-07T18:57:33.561+05:30"}
 ---
 
 First of all check [this](https://docs.spring.io/spring-cloud-config/docs/current/reference/html/#_spring_cloud_config_client) official documentation if the below notes don't make sense
@@ -145,5 +145,88 @@ eureka.client.fetch-registry=false
 #### Basic example of connection to eureka server
 - docker-compose.yaml
 - ![Pasted image 20240707171924.png](/img/user/Attachments/Pasted%20image%2020240707171924.png)
+#### Final look at the ***docker-compose.yaml*** file
+```docker
+services:  
+  naming-server:  
+    image: itscrestfallen/mmv2-naming-server:0.0.1-SNAPSHOT  
+    deploy:  
+      resources:  
+        limits:  
+          memory: 700m  
+    ports:  
+      - "8761:8761"  
+    networks:  
+      - currency-network  
+  
+  zipkin-server:  
+    image: openzipkin/zipkin  
+    deploy:  
+      resources:  
+        limits:  
+          memory: 300m  
+    ports:  
+      - "9411:9411"  
+    networks:  
+      - currency-network  
+    restart: always  
+  
+  currency-exchange:  
+    image: itscrestfallen/mmv2-currency-exchange:0.0.1-SNAPSHOT  
+    deploy:  
+      resources:  
+        limits:  
+          memory: 700m  
+    ports:  
+      - "8000:8000"  
+    networks:  
+      - currency-network  
+    depends_on:  
+      - naming-server  
+    environment:  
+      - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://naming-server:8761/eureka  
+      - MANAGEMENT_ZIPKIN_TRACING_ENDPOINT=http://zipkin-server:9411/api/v2/spans  
+  
+  
+  currency-conversion:  
+    image: itscrestfallen/mmv2-currency-conversion-service:0.0.1-SNAPSHOT  
+    deploy:  
+      resources:  
+        limits:  
+          memory: 700m  
+    ports:  
+      - "8100:8100"  
+    networks:  
+      - currency-network  
+    depends_on:  
+      - naming-server  
+    environment:  
+      - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://naming-server:8761/eureka  
+      - MANAGEMENT_ZIPKIN_TRACING_ENDPOINT=http://zipkin-server:9411/api/v2/spans  
+  
+  
+  
+  api-gateway:  
+    image: itscrestfallen/mmv2-api-gateway:0.0.1-SNAPSHOT  
+    deploy:  
+      resources:  
+        limits:  
+          memory: 700m  
+    ports:  
+      - "8765:8765"  
+    networks:  
+      - currency-network  
+    depends_on:  
+      - naming-server  
+    environment:  
+      - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://naming-server:8761/eureka  
+      - MANAGEMENT_ZIPKIN_TRACING_ENDPOINT=http://zipkin-server:9411/api/v2/spans  
+  
+  
+  
+networks:  
+  currency-network:
+```
 
 
+### [[Container Orchestration\|Container Orchestration]]
