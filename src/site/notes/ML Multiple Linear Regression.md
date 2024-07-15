@@ -1,7 +1,8 @@
 ---
-{"dg-publish":true,"permalink":"/ml-multiple-linear-regression/","tags":["notes"],"created":"2024-06-28T11:12:45.540+05:30","updated":"2024-07-06T19:49:47.505+05:30"}
+{"dg-publish":true,"permalink":"/ml-multiple-linear-regression/","tags":["notes"],"created":"2024-07-15T15:21:51.913+05:30","updated":"2024-07-15T15:21:51.913+05:30"}
 ---
 
+# CART - Classification and Regression Trees
 # Multiple Linear Regression
 - ![Pasted image 20240628111325.png|400](/img/user/Attachments/Pasted%20image%2020240628111325.png)
 ## Dummy variable trap
