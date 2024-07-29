@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/container-orchestration/","tags":["notes"],"created":"2024-07-07T19:05:45.151+05:30","updated":"2024-07-07T19:05:45.151+05:30"}
+{"dg-publish":true,"permalink":"/container-orchestration/","tags":["notes"],"created":"2024-07-12T08:17:29.241+05:30","updated":"2024-07-07T19:05:45.152+05:30"}
 ---
 
 

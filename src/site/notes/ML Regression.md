@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/ml-regression/","tags":["notes"],"created":"2024-07-15T15:38:23.984+05:30","updated":"2024-07-15T15:38:23.984+05:30"}
+{"dg-publish":true,"permalink":"/ml-regression/","tags":["notes"],"created":"2024-07-12T08:17:35.239+05:30","updated":"2024-07-15T15:38:23.985+05:30"}
 ---
 
 # Assumptions to apply linear regression
