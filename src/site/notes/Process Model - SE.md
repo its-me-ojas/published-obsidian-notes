@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/process-model-se/","tags":["notes"],"created":"2024-09-25T15:57:32.148+05:30","updated":"2024-09-25T23:04:16.159+05:30"}
+{"dg-publish":true,"permalink":"/process-model-se/","tags":["notes"],"created":"2024-09-25T15:57:32.148+05:30","updated":"2024-09-25T23:09:50.925+05:30"}
 ---
 
 # Framework Activities
