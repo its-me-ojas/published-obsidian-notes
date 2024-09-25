@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/ml-simple-linear-regression/","tags":["notes"],"created":"2024-07-12T08:17:29.521+05:30","updated":"2024-07-06T19:49:36.974+05:30"}
+{"dg-publish":true,"permalink":"/ml-simple-linear-regression/","tags":["notes"],"created":"2024-09-14T14:53:22.908+05:30","updated":"2024-07-06T19:49:36.974+05:30"}
 ---
 
 ![Pasted image 20240628084028.png|400](/img/user/Attachments/Pasted%20image%2020240628084028.png)

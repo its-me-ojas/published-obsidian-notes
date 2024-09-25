@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/ml-backward-elimination/","tags":["notes"],"created":"2024-07-12T08:17:15.779+05:30","updated":"2024-07-06T19:50:05.853+05:30"}
+{"dg-publish":true,"permalink":"/ml-backward-elimination/","tags":["notes"],"created":"2024-09-14T14:53:22.523+05:30","updated":"2024-07-06T19:50:05.853+05:30"}
 ---
 
 Steps

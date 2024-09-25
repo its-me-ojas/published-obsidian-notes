@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/ml-polynomial-linear-regression/","tags":["notes"],"created":"2024-07-12T08:17:35.914+05:30","updated":"2024-07-06T19:49:52.759+05:30"}
+{"dg-publish":true,"permalink":"/ml-polynomial-linear-regression/","tags":["notes"],"created":"2024-09-14T14:55:30.169+05:30","updated":"2024-07-06T19:49:52.759+05:30"}
 ---
 
 [[Position_Salaries.csv]]

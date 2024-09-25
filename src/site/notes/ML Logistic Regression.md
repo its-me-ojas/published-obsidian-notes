@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/ml-logistic-regression/","tags":["notes"],"created":"2024-07-16T08:12:41.076+05:30","updated":"2024-07-29T07:00:35.163+05:30"}
+{"dg-publish":true,"permalink":"/ml-logistic-regression/","tags":["notes"],"created":"2024-09-14T14:55:04.104+05:30","updated":"2024-07-29T07:00:35.163+05:30"}
 ---
 
 

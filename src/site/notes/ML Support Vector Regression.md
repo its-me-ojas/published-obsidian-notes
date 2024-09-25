@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/ml-support-vector-regression/","tags":["notes"],"created":"2024-07-15T13:10:35.070+05:30","updated":"2024-07-15T14:42:19.221+05:30"}
+{"dg-publish":true,"permalink":"/ml-support-vector-regression/","tags":["notes"],"created":"2024-09-14T14:54:55.765+05:30","updated":"2024-07-15T14:42:19.221+05:30"}
 ---
 
 ## Linear 
